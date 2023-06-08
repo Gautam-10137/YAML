@@ -1,0 +1,80 @@
+student: !!seq    #sequence data type
+ - marks
+ - name
+ - rollNo
+
+cities: !!seq [Hisar,Sirsa,Rohtak]
+
+# some of the keys of sequence will be empty
+#sparse seq
+sparse seq:
+ - hey
+ - how
+ - 
+ - NULL
+ - 1010
+
+# Nested sequence
+-
+ - pizza
+ - burger
+ - spring roll
+-
+ -
+ - car
+ - bike
+
+#  key : value  pairs are called maps
+!!map
+
+# nested mappings: map within a map
+name: Gautam Pahwa
+role:
+ age: 20
+ job: student
+
+# same as
+name: Gautam pahwa
+role: {age: 20,job: student}
+
+# pairs: keys have duplicate values
+# !!pairs
+pair example: !!pairs
+ - job: student
+ - job: teacher
+#  this will be an array of hashtables
+
+# same as
+pair example: !!pairs [job: student,job: teacher]
+
+
+# !!set will  allow you to have unique values
+name: !!set
+ ? Gautam
+ ? Pankaj
+ ? Nikhil
+
+#  dictionary  !!omap
+people: !!omap
+  - Gautam:                        # storing sequence of values
+     name: Gautam pahwa
+     age: 20
+     weight: 80kg
+  - Pankaj:
+     name: Pankaj bajaj
+     age: 20
+     weight: 55kg
+
+# reusing some properties using anchors
+likings: &likes
+ fav food: pizza
+ dislikes: momos
+
+person1:
+  name: Gautam Pahwa
+  <<: *likes
+
+person2:
+  name: Pankaj
+  <<: *likes
+  dislikes: burger      # Overriding
