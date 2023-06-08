@@ -1,0 +1,18 @@
+# Extension for yaml file is .yaml &  .yml
+
+"Into":"My name is Gautam pahwa"
+529:"This is my roll number"
+
+# lists
+- pizza
+- burger
+- spring roll
+- pasta
+
+# block style
+cities:
+ - Hisar
+ - Sirsa
+ - Rohtak
+ - Yamunanagar
+ - Gurugram
