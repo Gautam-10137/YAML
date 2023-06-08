@@ -1,0 +1,69 @@
+# -> Notation:
+# VariableName: variable/content 
+
+# String variable
+myself : Gautam pahwa
+age : My age is 20
+Profession: I am a student
+
+# to store in multiple lines
+bio: |
+hey , my name is Gautam Pahwa.
+I am Technology Enthusiastic.
+
+#  to store multiple lines as a Single Line
+message1: >
+this will
+all be 
+in one single line
+
+# same as 
+message2: this will all be in one single line
+
+# integer
+number: 143
+
+# float
+marks: 98.76
+
+# boolean
+booleanValue: No     # n,N,no,false,False,FALSE
+
+# specifying  data type explicitly
+zero: !!int 0
+positiveNum: !!int 45
+negativeNum: !!int -45
+binaryNum: !!int 0b11011
+octalNum: !!int 06574
+Hexa: !!int 0x451082
+commaValue: !!int +540_000   #540,000
+
+# floating point number
+marks: !!float 56.89
+infinite: !!float .inf
+not a number: .nan
+boolean: !!bool No
+message: !!str hello
+
+# null
+surname: !!null NULL   # null, NULL,~
+~ : this is a null key
+
+# Array representation
+states:
+ - new delhi
+ - mumbai
+
+cities: [Hisar,Rohtak,Sirsa]
+
+
+# Date and time
+date: 2002-12-12   # by default timezone as 00:00:00Z UTC 
+taarikh: !!timestamp 1973-08-15T09:00:00  
+india time: 1980-12-21T05:38:28 +5:30
+
+
+# Exponential number
+exp: 6.023E56
+
+
