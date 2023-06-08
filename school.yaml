@@ -1,0 +1,9 @@
+---
+School:
+- name: Bharat High School
+  principal: Mr. Vomesh Mehtani
+  Students:
+  - Student:
+    - rno: 13
+      name: Gautam
+      marks: 92.4

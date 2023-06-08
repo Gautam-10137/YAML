@@ -1,0 +1,15 @@
+<!-- Have to specify vesrion and encoding scheme -->
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Here we are stroring data of school and data of like principal , students(name,rollno,marks)  -->
+
+<School name="Bharat High School" principal="Mr. Vomesh Mehtani">
+      <Students>
+          <Student>
+                <rno>13</rno>
+                <name>"Gautam"</name>
+                <marks>92.4</marks>
+          </Student>
+      </Student>
+ 
+</School>
